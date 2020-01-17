@@ -1,0 +1,28 @@
+{
+  "name": "webpack4",
+  "version": "1.0.0",
+  "description": "Esto sera divertido",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
+    "build:local": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.personalizado.js",
+    "build:multi": "webpack --config ./multiple-entry-points/webpack.config.personalizado.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.personalizado.js",
+    "build:plugins": "webpack --config ./plugins/webpack.config.personalizado.js"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "@biosh0KEd",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "3.4.2",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "style-loader": "1.1.2",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10"
+  }
+}
